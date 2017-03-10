@@ -1,0 +1,96 @@
+﻿@model WebApplication.ExpensesIncome
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ExpensesIncome</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesDescription)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesType.ExpensesType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesType.ExpensesType1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesMonth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesMonth)
+        </dd>
+
+        <hr/>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeType.IncomeType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeType.IncomeType1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeMonth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeMonth)
+        </dd>
+        
+        <hr/>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesIncomeCreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesIncomeCreatedDate)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdExpensesIncome }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

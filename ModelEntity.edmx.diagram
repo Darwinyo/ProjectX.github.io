@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="42895234463a4d9dadbd1a230a02eac9" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="ProjectXModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.Accounts" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.Addresses" Width="1.5" PointX="8.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.AspNetUsers" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.Carrier" Width="1.5" PointX="8.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.Contacts" Width="1.5" PointX="8.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.Emails" Width="1.5" PointX="8.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.ExpensesIncome" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.ExpensesType" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.ID" Width="1.5" PointX="10.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.IncomeType" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.Notes" Width="1.5" PointX="8.25" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectXModel.Person" Width="1.5" PointX="8.25" PointY="25.5" IsExpanded="true" />
+        <AssociationConnector Association="ProjectXModel.FK_ExpensesIncomeIdBelongstoAccount_IdAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_GUIDAccount_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdBelongstoAccount_IdAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdAddresses_IdAddresses" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdCarrier_IdCarreir" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdContacts_IdContacts" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdEmails_IdEmails" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdExpensesType_IdExpensesType" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdIncomeType_IdIncomeType" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdNotes_IdNotes" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdPerson_IdPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.AspNetUserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectXModel.FK_IdBelong_Id" />
+        <AssociationConnector Association="ProjectXModel.FK_IdInBelong_Id" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

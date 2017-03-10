@@ -1,0 +1,370 @@
+﻿body {
+    background-image: url("../Images/frankfurt_germany_5k-5120x2880.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pagewrapper {
+    width: 100%;
+    position: absolute;
+}
+
+.sidebarwrapper {
+    top: 0px;
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    z-index: 1;
+    background-color: #464545;
+    overflow: auto;
+}
+#UserImageA{
+    width:100px;
+    height:100px;
+    background-color:inherit;
+    margin-left:65px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+#UserImage{
+    height:100px;
+    width:100px;
+    background-color:dimgrey;
+}
+.sidebar-nav {
+    float: left;
+    padding: 0px;
+    list-style: none;
+}
+
+    .sidebar-nav ul li {
+        margin-left:-40px;
+        list-style:none;
+        width: 250px;
+        text-align: left;
+        text-indent:10px;
+        line-height: 40px;
+    }
+    .sidebar-nav ul li ul li{
+        margin-left:-20px;
+    }
+    .sidebar-nav li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+
+    .sidebar-nav ul li a:hover {
+        background-color: #007053;
+    }
+.bavbar-toggle {
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color:transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+    .bavbar-toggle:focus {
+        outline: 0;
+    }
+
+    .bavbar-toggle .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+    }
+
+        .bavbar-toggle .icon-bar + .icon-bar {
+            margin-top: 4px;
+        }
+
+@media (min-width: 768px) {
+    .bavbar-toggle {
+        display: contents;
+    }
+}
+.navbar-inverse .bavbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.tavle {
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.tavle > thead > tr > th,
+.tavle > tbody > tr > th,
+.tavle > tfoot > tr > th,
+.tavle > thead > tr > td,
+.tavle > tbody > tr > td,
+.tavle > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 0px solid #ddd;
+}
+
+.tavle > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+}
+
+.tavle > caption + thead > tr:first-child > th,
+.tavle > colgroup + thead > tr:first-child > th,
+.tavle > thead:first-child > tr:first-child > th,
+.tavle > caption + thead > tr:first-child > td,
+.tavle > colgroup + thead > tr:first-child > td,
+.tavle > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+.tavle > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+
+.tavle .tavle {
+    background-color: rgba(249, 249, 249, 0.50);
+}
+    .tavle > thead > tr > th, .tavle > tbody > tr > th, .tavle > tfoot > tr > th, .tavle > thead > tr > td, .tavle > tbody > tr > td, .tavle > tfoot > tr > td
+    {
+        background-color: transparent;
+    }
+
+.tavle-condensed > thead > tr > th,
+.tavle-condensed > tbody > tr > th,
+.tavle-condensed > tfoot > tr > th,
+.tavle-condensed > thead > tr > td,
+.tavle-condensed > tbody > tr > td,
+.tavle-condensed > tfoot > tr > td {
+    padding: 5px;
+}
+
+.tavle-bordered {
+    border: 1px solid #ddd;
+}
+
+    .tavle-bordered > thead > tr > th,
+    .tavle-bordered > tbody > tr > th,
+    .tavle-bordered > tfoot > tr > th,
+    .tavle-bordered > thead > tr > td,
+    .tavle-bordered > tbody > tr > td,
+    .tavle-bordered > tfoot > tr > td {
+        border: 1px solid #ddd;
+    }
+
+    .tavle-bordered > thead > tr > th,
+    .tavle-bordered > thead > tr > td {
+        border-bottom-width: 2px;
+    }
+
+.tavle-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.tavle-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+
+tavle col[class*="col-"] {
+    position: static;
+    display: table-column;
+    float: none;
+}
+
+tavle td[class*="col-"],
+tavle th[class*="col-"] {
+    position: static;
+    display: table-cell;
+    float: none;
+}
+.tavle .tavle .tavle{
+    background-color:transparent;
+}
+.tavle .tavle a {
+    text-decoration: none;
+}
+.tavle .tavle td:hover {
+    background-color:rgba(53, 53, 53, 0.95)
+}
+.tavle > thead > tr > td.active,
+.tavle > tbody > tr > td.active,
+.tavle > tfoot > tr > td.active,
+.tavle > thead > tr > th.active,
+.tavle > tbody > tr > th.active,
+.tavle > tfoot > tr > th.active,
+.tavle > thead > tr.active > td,
+.tavle > tbody > tr.active > td,
+.tavle > tfoot > tr.active > td,
+.tavle > thead > tr.active > th,
+.tavle > tbody > tr.active > th,
+.tavle > tfoot > tr.active > th {
+    background-color: #f5f5f5;
+}
+
+.tavle-hover > tbody > tr > td.active:hover,
+.tavle-hover > tbody > tr > th.active:hover,
+.tavle-hover > tbody > tr.active:hover > td,
+.tavle-hover > tbody > tr:hover > .active,
+.tavle-hover > tbody > tr.active:hover > th {
+    background-color: #e8e8e;
+}
+
+.tavle > thead > tr > td.success,
+.tavle > tbody > tr > td.success,
+.tavle > tfoot > tr > td.success,
+.tavle > thead > tr > th.success,
+.tavle > tbody > tr > th.success,
+.tavle > tfoot > tr > th.success,
+.tavle > thead > tr.success > td,
+.tavle > tbody > tr.success > td,
+.tavle > tfoot > tr.success > td,
+.tavle > thead > tr.success > th,
+.tavle > tbody > tr.success > th,
+.tavle > tfoot > tr.success > th {
+    background-color: #dff0d8;
+}
+
+.tavle-hover > tbody > tr > td.success:hover,
+.tavle-hover > tbody > tr > th.success:hover,
+.tavle-hover > tbody > tr.success:hover > td,
+.tavle-hover > tbody > tr:hover > .success,
+.tavle-hover > tbody > tr.success:hover > th {
+    background-color: #d0e9c6;
+}
+
+.tavle > thead > tr > td.info,
+.tavle > tbody > tr > td.info,
+.tavle > tfoot > tr > td.info,
+.tavle > thead > tr > th.info,
+.tavle > tbody > tr > th.info,
+.tavle > tfoot > tr > th.info,
+.tavle > thead > tr.info > td,
+.tavle > tbody > tr.info > td,
+.tavle > tfoot > tr.info > td,
+.tavle > thead > tr.info > th,
+.tavle > tbody > tr.info > th,
+.tavle > tfoot > tr.info > th {
+    background-color: #d9edf7;
+}
+
+.tavle-hover > tbody > tr > td.info:hover,
+.tavle-hover > tbody > tr > th.info:hover,
+.tavle-hover > tbody > tr.info:hover > td,
+.tavle-hover > tbody > tr:hover > .info,
+.tavle-hover > tbody > tr.info:hover > th {
+    background-color: #c4e3f3;
+}
+
+.tavle > thead > tr > td.warning,
+.tavle > tbody > tr > td.warning,
+.tavle > tfoot > tr > td.warning,
+.tavle > thead > tr > th.warning,
+.tavle > tbody > tr > th.warning,
+.tavle > tfoot > tr > th.warning,
+.tavle > thead > tr.warning > td,
+.tavle > tbody > tr.warning > td,
+.tavle > tfoot > tr.warning > td,
+.tavle > thead > tr.warning > th,
+.tavle > tbody > tr.warning > th,
+.tavle > tfoot > tr.warning > th {
+    background-color: #fcf8e3;
+}
+
+.tavle-hover > tbody > tr > td.warning:hover,
+.tavle-hover > tbody > tr > th.warning:hover,
+.tavle-hover > tbody > tr.warning:hover > td,
+.tavle-hover > tbody > tr:hover > .warning,
+.tavle-hover > tbody > tr.warning:hover > th {
+    background-color: #faf2cc;
+}
+
+.tavle > thead > tr > td.danger,
+.tavle > tbody > tr > td.danger,
+.tavle > tfoot > tr > td.danger,
+.tavle > thead > tr > th.danger,
+.tavle > tbody > tr > th.danger,
+.tavle > tfoot > tr > th.danger,
+.tavle > thead > tr.danger > td,
+.tavle > tbody > tr.danger > td,
+.tavle > tfoot > tr.danger > td,
+.tavle > thead > tr.danger > th,
+.tavle > tbody > tr.danger > th,
+.tavle > tfoot > tr.danger > th {
+    background-color: #f2dede;
+}
+
+.tavle-hover > tbody > tr > td.danger:hover,
+.tavle-hover > tbody > tr > th.danger:hover,
+.tavle-hover > tbody > tr.danger:hover > td,
+.tavle-hover > tbody > tr:hover > .danger,
+.tavle-hover > tbody > tr.danger:hover > th {
+    background-color: #ebcccc;
+}
+
+.tavle-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .tavle-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+
+        .tavle-responsive > .tavle {
+            margin-bottom: 0;
+        }
+
+            .tavle-responsive > .tavle > thead > tr > th,
+            .tavle-responsive > .tavle > tbody > tr > th,
+            .tavle-responsive > .tavle > tfoot > tr > th,
+            .tavle-responsive > .tavle > thead > tr > td,
+            .tavle-responsive > .tavle > tbody > tr > td,
+            .tavle-responsive > .tavle > tfoot > tr > td {
+                white-space: nowrap;
+            }
+
+        .tavle-responsive > .tavle-bordered {
+            border: 0;
+        }
+
+            .tavle-responsive > .tavle-bordered > thead > tr > th:first-child,
+            .tavle-responsive > .tavle-bordered > tbody > tr > th:first-child,
+            .tavle-responsive > .tavle-bordered > tfoot > tr > th:first-child,
+            .tavle-responsive > .tavle-bordered > thead > tr > td:first-child,
+            .tavle-responsive > .tavle-bordered > tbody > tr > td:first-child,
+            .tavle-responsive > .tavle-bordered > tfoot > tr > td:first-child {
+                border-left: 0;
+            }
+
+            .tavle-responsive > .tavle-bordered > thead > tr > th:last-child,
+            .tavle-responsive > .tavle-bordered > tbody > tr > th:last-child,
+            .tavle-responsive > .tavle-bordered > tfoot > tr > th:last-child,
+            .tavle-responsive > .tavle-bordered > thead > tr > td:last-child,
+            .tavle-responsive > .tavle-bordered > tbody > tr > td:last-child,
+            .tavle-responsive > .tavle-bordered > tfoot > tr > td:last-child {
+                border-right: 0;
+            }
+
+            .tavle-responsive > .tavle-bordered > tbody > tr:last-child > th,
+            .tavle-responsive > .tavle-bordered > tfoot > tr:last-child > th,
+            .tavle-responsive > .tavle-bordered > tbody > tr:last-child > td,
+            .tavle-responsive > .tavle-bordered > tfoot > tr:last-child > td {
+                border-bottom: 0;
+            }
+}
+#MainContent_DOBtxt{
+    margin-left:15px;
+}

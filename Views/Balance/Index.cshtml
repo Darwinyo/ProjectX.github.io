@@ -1,0 +1,95 @@
+﻿@model IEnumerable<WebApplication.ExpensesIncome>
+@using System.Web.UI.WebControls
+@using GridMvc.Html
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table grid-table gridtable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpensesDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpensesType.ExpensesType1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpensesMonth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpensesValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncomeDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncomeType.IncomeType1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncomeMonth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncomeValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpensesIncomeCreatedDate)
+        </th>
+        <th></th>
+    </tr>
+        @*@Html.Grid(Model).Columns(col =>
+   {
+       col.Add(x => x.ExpensesDescription).Titled("Expense").Sortable(true);
+       col.Add(x => x.ExpensesType.ExpensesType1).Titled("Type").Sortable(true);
+       col.Add(x => x.ExpensesMonth).Titled("Period").Sortable(true);
+       col.Add(x => x.ExpensesValue).Titled("Value").Sortable(true);
+       col.Add(x => x.IncomeDescription).Titled("Expense").Sortable(true);
+       col.Add(x => x.IncomeType.IncomeType1).Titled("Type").Sortable(true);
+       col.Add(x => x.IncomeMonth).Titled("Period").Sortable(true);
+       col.Add(x => x.IncomeValue).Titled("Value").Sortable(true);
+       col.Add(x => x.ExpensesIncomeCreatedDate).Titled("CreatedDate").Sortable(true);
+   }).WithPaging(20)*@
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpensesDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpensesType.ExpensesType1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpensesMonth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpensesValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncomeDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncomeType.IncomeType1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncomeMonth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncomeValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpensesIncomeCreatedDate)
+        </td>
+        <td id="manage">
+            @Html.ActionLink("Edit", "Edit", new { id = item.IdExpensesIncome }) |
+            @Html.ActionLink("Details", "Details", new { id = item.IdExpensesIncome }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.IdExpensesIncome })
+        </td>
+    </tr>
+}
+
+</table>

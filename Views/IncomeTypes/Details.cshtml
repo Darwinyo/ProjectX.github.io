@@ -1,0 +1,42 @@
+﻿@model WebApplication.IncomeType
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>IncomeType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeType1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeTypeCreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeTypeCreatedDate)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdIncomeType }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

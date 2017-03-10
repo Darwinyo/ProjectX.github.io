@@ -1,0 +1,101 @@
+﻿@model WebApplication.ExpensesIncome
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ExpensesIncome</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesDescription)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesType.ExpensesType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesType.ExpensesType1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesMonth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesMonth)
+        </dd>
+        
+        <hr/>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeType.IncomeType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeType.IncomeType1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeMonth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeMonth)
+        </dd>
+
+        <hr/>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesIncomeCreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesIncomeCreatedDate)
+        </dd>
+        
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

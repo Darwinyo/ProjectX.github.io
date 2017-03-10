@@ -1,0 +1,42 @@
+﻿@model WebApplication.ExpensesType
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ExpensesType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesType1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpensesTypeCreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpensesTypeCreatedDate)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdExpensesType }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
